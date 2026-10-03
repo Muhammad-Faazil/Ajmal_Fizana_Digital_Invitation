@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en" class="light" style="color-scheme: light only">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Maziya &amp; Mufeed — Wedding | Maison Dorée</title>
+    <meta name="description" content="We request the pleasure of your company to celebrate the wedding ceremony of Maziya &amp; Mufeed Abbas Hyder on Saturday, 21 November 2026 at Father Muller Convention Centre, Pumpwell, Mangalore." />
+    <meta name="theme-color" content="#fcfbf7" />
+
+    <!-- Typography & Fonts: Adobe Typekit (Mrs Eaves & Parfumerie Script) + Google Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/jzm0juw.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Charm:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" />
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Critical Media Preloads -->
+    <link rel="preload" as="image" href="assests/images/envelope-poster-CthGb2ks.jpg" />
+    <link rel="preload" as="image" href="assests/images/intro-poster-new-CNDDqY2q.jpg" />
+  </head>
+
+  <body class="bg-background text-foreground overflow-x-hidden font-body antialiased selection:bg-foreground/10 selection:text-foreground">
+
+
+    <!-- ====================================================================
+         FLOATING AUDIO CONTROLLER (Bottom Right Fixed)
+         ==================================================================== -->
+    <button type="button" id="audio-toggle" aria-label="Toggle ambient music" title="Ambient Music">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+      </svg>
+    </button>
+
+    <!-- ====================================================================
+         INTRO EXPERIENCE OVERLAY (Envelope -> Knot -> Hero Transition)
+         ==================================================================== -->
+    <div id="intro-overlay" role="dialog" aria-modal="true" aria-label="Wedding Invitation Envelope">
+      <!-- Static Poster Frame -->
+      <img src="assests/images/envelope-poster-CthGb2ks.jpg" alt="Wedding Invitation Envelope" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none" />
+
+      <!-- Video 1: Envelope Wax Seal Opening -->
+      <video id="envelope-video" src="assests/video/Maziya_Mufeed_MM_Envelope_Opening_Animated1.mp4" poster="assests/images/envelope-poster-CthGb2ks.jpg" playsinline muted preload="auto" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none"></video>
+
+      <!-- Video 2: Ribbon Knot & Curtain Unfurling -->
+      <video id="knot-video" src="assests/video/intro-video-new-NNPe0W7X.mp4" playsinline muted preload="auto" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none"></video>
+
+      <!-- Tap to Open Call to Action 
+      <div id="intro-cta" class="absolute inset-0 flex flex-col items-center justify-end pb-16 z-20 pointer-events-none select-none text-center">
+        <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-white/90 text-xs font-body tracking-[0.25em] uppercase animate-gentle-bounce shadow-2xl">
+          <svg class="w-3.5 h-3.5 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+          </svg>
+          Tap anywhere to open
+        </div>
+      </div>-->
+    </div>
+
+    <!-- ====================================================================
+         MAIN INVITATION CONTENT
+         ==================================================================== -->
+    <main class="min-h-screen">
+
+      <!-- ==================================================================
+           SECTION 2: ISLAMIC INTRODUCTION (Hero Section)
+           ================================================================== -->
+      <section id="hero" class="hero-section">
+        <!-- Hero Background Artwork -->
+        <div class="absolute inset-0 overflow-hidden">
+          <img src="assests/images/intro-poster-new-CNDDqY2q.jpg" alt="Maison Dorée Villa" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none" draggable="false" />
+        </div>
+
+        <!-- Invitation Text Container (Fades in gently during intro video) -->
+        <div id="hero-invitation-text" class="hero-content-wrapper opacity-0 translate-y-3">
+          <!-- M+M Monogram -->
+          <img src="assests/images/Ornate Sage Green Double M Monogram.png" alt="M+M Monogram" class="w-16 sm:w-20 md:w-24 h-auto mx-auto mb-3 drop-shadow-sm pointer-events-none select-none" />
+
+          <!-- Islamic Bismillah -->
+          <p class="font-arabic text-2xl sm:text-2xl text-[#2d3a22] mb-1.5 leading-relaxed tracking-wide font-normal drop-shadow-[0_1px_3px_rgba(255,255,255,0.8)]">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+          <p class="font-body text-xs sm:text-xs tracking-[0.25em] uppercase text-foreground/50 font-medium">
+            IN THE NAME OF ALMIGHTY<br>THE MOST GRACIOUS,<br> THE MOST MERCIFUL
+          </p>
+          
+          <!-- Couple Names -->
+          <h1 class="font-charm text-3xl sm:text-6xl md:text-7xl text-[#24311b] font-semibold leading-tight mb-2 drop-shadow-[0_1px_3px_rgba(255,255,255,0.9)]">
+           Maziya
+           <br>
+           <span class="font-charm text-2xl sm:text-3xl md:text-4xl text-[#3f4c34]/70 italic">&amp;</span>
+           <br>
+           Mufeed Abbas Hyder
+          </h1>
+          <!-- In Sha Allah-->
+          
+          <p class="font-arabic text-xl sm:text-2xl text-[#2d3a22] mb-6 font-medium drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
+            إن شاء الله
+          </p> 
+          <!-- Getting Married 
+          <p class="font-body italic text-base sm:text-lg text-[#2d3a22] mb-1 drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
+            are getting married<br>
+          </p>
+          -->
+
+          
+          
+
+
+          <!-- Scroll Indicator -->
+          <button type="button" id="scroll-to-next" class="hero-scroll-btn group" aria-label="Scroll to discover">
+            <span class="text-[10px] sm:text-xs tracking-[0.25em] uppercase font-body font-semibold text-[#2d3a22]">Scroll to discover</span>
+            <svg class="w-3.5 h-3.5 text-[#3f4c34] animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <polyline points="6 9 12 15 18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 3: QURAN VERSE
+           ================================================================== -->
+      <section id="quran-verse" class="relative py-20 md:py-28 px-6 overflow-hidden">
+        <div class="max-w-xl mx-auto text-center reveal-on-scroll">
+          <!-- Floral Divider Accent -->
+          <img src="assests/images/floral-divider-DJovYoL0.png" alt="" class="w-32 md:w-44 h-auto mx-auto mb-8 opacity-80 pointer-events-none select-none" />
+
+          <!-- Card -->
+          <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-8 sm:p-12 text-center backdrop-blur-[2px]">
+            <p class="font-body text-xs tracking-[0.25em] uppercase text-foreground/50 mb-6">
+              In the Holy Quran, Allah SWT says
+            </p>
+
+            <!-- Arabic Calligraphy Verse -->
+            <p class="font-arabic text-3xl sm:text-4xl md:text-5xl text-foreground mb-4 leading-relaxed tracking-wide font-normal">
+              وَخَلَقْنَاكُمْ أَزْوَاجًا
+            </p>
+
+            <!-- Translation -->
+            <p class="font-display italic text-2xl sm:text-3xl text-foreground/90 mb-4 leading-relaxed">
+              “And We created you in pairs.”
+            </p>
+
+            <!-- Citation -->
+            <p class="font-body text-xs sm:text-sm tracking-[0.25em] uppercase text-foreground/50 font-medium">
+              — Surah An-Naba, 78:8 —
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 4: FAMILY / GRANDPARENTS
+           ================================================================== -->
+      <section id="family" class="py-20 md:py-28 px-6 overflow-hidden">
+        <div class="max-w-3xl mx-auto">
+          <!-- Section Title -->
+          <div class="text-center mb-12 reveal-on-scroll">
+            <h2 class="font-display text-5xl md:text-7xl text-foreground mb-2">
+              The Families
+            </h2>
+            <p class="font-body text-foreground/50 text-xs sm:text-sm tracking-[0.25em] uppercase">
+              With the blessings of Allah &amp; our elders
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal-on-scroll">
+            <!-- Bride's Family Card -->
+             <div class="relative max-w-2xl mx-auto">
+          <!-- Floating Roses on Corners -->
+          <img src="assests/images/roses-top-left-D0RRxzlV.png" alt="" class="gifts-rose-left absolute -top-8 -left-12 md:-left-16 w-36 md:w-44 h-auto pointer-events-none select-none z-10 animate-rose-left" />
+          <img src="assests/images/roses-bottom-right-C-Wj2fia.png" alt="" class="gifts-rose-right absolute -bottom-8 -right-12 md:-right-16 w-36 md:w-44 h-auto pointer-events-none select-none z-10 animate-rose-right" />
+            <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-6 sm:p-8 text-center flex flex-col justify-between">
+              <div>
+                <span class="font-body text-[14px] sm:text-xs text-foreground/60 tracking-wider mb-2 uppercase">
+                  THE BRIDE'S FAMILY
+                </span>
+                <h3 class="font-charm text-3xl sm:text-4xl text-foreground font-normal mb-3">
+                  Maziya
+                </h3>
+                <p class="font-body text-[11px] sm:text-xs text-foreground/60 tracking-wider mb-2 uppercase">
+                  Granddaughter of
+                </p>
+                <p class="font-body text-xs sm:text-[13px] font-semibold text-foreground/80 tracking-wide uppercase leading-relaxed mb-6">
+                  MARHOOM ABDUL KHADAR GOODINABALI<br />&amp; MARHOOM MOIDEEN VALAVOOR
+                </p>
+              </div>
+
+              <div class="pt-5 border-t border-foreground/10">
+                <p class="font-body text-[11px] sm:text-xs text-foreground/60 tracking-wider mb-2 uppercase">
+                  Daughter of
+                </p>
+                <p class="font-body text-sm sm:text-base font-semibold tracking-wider text-foreground uppercase mb-1">
+                  MRS. &amp; MR. MOHAMMAD VALAVOOR
+                </p>
+                <p class="font-body text-xs tracking-wider text-foreground/60 uppercase">
+                  VALAVOOR HOUSE, THUMBAY BANTWAL
+                </p>
+              </div>
+            </div>
+
+            <!-- Groom's Family Card -->
+            <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-6 sm:p-8 text-center flex flex-col justify-between">
+              <div>
+                <span class="font-body text-[14px] sm:text-xs text-foreground/60 tracking-wider mb-2 uppercase">
+                  THE GROOM'S FAMILY
+                </span>
+                <h3 class="font-charm text-3xl sm:text-4xl text-foreground font-normal mb-3">
+                  Mufeed Abbas Hyder
+                </h3>
+                <p class="font-body text-[11px] sm:text-xs text-foreground/60 tracking-wider mb-2 uppercase">
+                  Family &amp; Residence
+                </p>
+                <p class="font-body text-xs sm:text-[13px] font-semibold text-foreground/80 tracking-wide uppercase leading-relaxed mb-6">
+                  MUBEEN COTTAGE<br />K.C ROAD TALAPADY
+                </p>
+              </div>
+
+              <div class="pt-5 border-t border-foreground/10">
+                <p class="font-body text-[11px] sm:text-xs text-foreground/60 tracking-wider mb-2 uppercase">
+                  Son of
+                </p>
+                <p class="font-body text-sm sm:text-base font-semibold tracking-wider text-foreground uppercase mb-1">
+                  MR. ABBAS HYDER
+                </p>
+                <p class="font-body text-xs tracking-wider text-foreground/60 uppercase">
+                  TALAPADY, MANGALORE
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 5: COUPLE + WEDDING ANNOUNCEMENT
+           ================================================================== -->
+      <section id="announcement" class="py-20 md:py-28 px-6 overflow-hidden">
+        <div class="max-w-2xl mx-auto">
+          <!-- Nautical Luxury Yacht Illustration -->
+          <div class="relative z-10 flex justify-center -mb-8 reveal-on-scroll">
+            <img src="assests/images/yacht-illustration-BxPtm2NZ.png" alt="Wedding Yacht Illustration" class="w-48 md:w-60 h-auto drop-shadow-sm animate-yacht pointer-events-none select-none" />
+          </div>
+
+          <!-- Announcement Card -->
+          <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-6 sm:p-10 md:p-12 pt-14 text-center relative z-0 reveal-on-scroll">
+            <span class="text-xs font-body tracking-[0.3em] uppercase text-foreground/50 mb-3 block">
+              PRESENTS IN BLESSINGS
+            </span>
+
+            <h2 class="font-charm text-4xl sm:text-5xl md:text-6xl text-foreground mb-3 leading-tight">
+              Maziya <span class="text-3xl md:text-4xl text-foreground/50 italic">&amp;</span> Mufeed
+            </h2>
+
+            <div class="w-12 h-px bg-foreground/15 mx-auto my-5"></div>
+
+            <p class="font-body text-xs sm:text-sm tracking-[0.2em] uppercase text-foreground/80 max-w-md mx-auto leading-relaxed">
+              REQUEST THE PLEASURE OF YOUR PRESENCE TO CELEBRATE THEIR NIKAH
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 6: DATE / NIKAH DETAILS (With Maison Dorée Draped Curtains)
+           ================================================================== -->
+      <section id="program-section" class="relative py-20 md:py-28 px-6 overflow-hidden">
+        <!-- Parallax Scroll Draped Curtains -->
+        <img id="curtain-left" src="assests/images/curtain-left-new-C9yBPbWK.png" alt="" class="absolute max-w-none pointer-events-none select-none z-30 transition-all duration-300 ease-out animate-curtain-left" />
+        <img id="curtain-center" src="assests/images/curtain-center-new-EwKr26ZU.png" alt="" class="absolute left-1/2 -translate-x-1/2 max-w-none pointer-events-none select-none z-40" />
+        <img id="curtain-right" src="assests/images/curtain-right-new-Dusl3IYi.png" alt="" class="absolute max-w-none pointer-events-none select-none z-30 transition-all duration-300 ease-out animate-curtain-right" />
+
+        <div class="relative z-10 max-w-2xl mx-auto program-content-wrapper reveal-on-scroll">
+          <div class="text-center mb-10">
+            <h2 class="font-display text-5xl md:text-7xl text-foreground mb-2">
+              Wedding Ceremony
+            </h2>
+            <p class="font-body text-foreground/50 tracking-[0.25em] uppercase text-sm">
+              Programme &amp; Timings
+            </p>
+          </div>
+
+          <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-6 sm:p-10 text-center">
+            <p class="font-body text-xl sm:text-2xl tracking-[0.22em] font-large text-foreground uppercase mb-1">
+              ON SATURDAY,<br> 21st NOVEMBER 2026
+            </p>
+            <p class="font-body text-xs tracking-[0.18em] text-foreground/50 uppercase mb-8">
+              (11- JUMADA AL-AKHIRAH-1448 AH)
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto">
+              <!-- Nikah Card -->
+              <div class="p-5 rounded-xl border border-foreground/10 bg-background/50">
+                <span class="font-body text-[11px] tracking-[0.2em] uppercase text-foreground/50 block mb-1">CEREMONY</span>
+                <h3 class="font-display text-3xl sm:text-3xl text-foreground mb-1">Nikah</h3>
+                <p class="font-body text-xs sm:text-sm font-semibold tracking-wider text-foreground/80">11:00 AM</p>
+              </div>
+
+              <!-- Lunch Card -->
+              <div class="p-5 rounded-xl border border-foreground/10 bg-background/50">
+                <span class="font-body text-[11px] tracking-[0.2em] uppercase text-foreground/50 block mb-1">FEAST</span>
+                <h3 class="font-display text-3xl sm:text-3xl text-foreground mb-1">Lunch</h3>
+                <p class="font-body text-xs sm:text-sm font-semibold tracking-wider text-foreground/80">FOLLOWING THE NIKAH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 7: COUNTDOWN
+           ================================================================== -->
+      <section id="countdown" class="relative py-20 md:py-28 px-6 overflow-hidden">
+        <!-- Classical Architectural Columns on Sides -->
+        <img src="assests/images/column-left-Deau9Trj.png" alt="" class="countdown-col-left absolute pointer-events-none select-none" />
+        <img src="assests/images/column-right-DejZoXz8.png" alt="" class="countdown-col-right absolute pointer-events-none select-none" />
+
+        <div class="relative z-10 max-w-xl mx-auto text-center reveal-on-scroll">
+          <h2 class="font-display text-5xl md:text-7xl text-foreground mb-2" data-i18n="countdown.title">
+            Countdown
+          </h2>
+          <p class="text-foreground/50 text-sm font-body tracking-[0.25em] uppercase mb-12" data-i18n="countdown.until">
+            Until 21 November 2026
+          </p>
+
+          <!-- Realtime Ticking Countdown Grid -->
+          <div class="countdown-grid grid grid-cols-4 gap-1.5 sm:gap-3 md:gap-6 max-w-sm sm:max-w-md mx-auto">
+            <div class="countdown-card bg-foreground/[0.03] border border-foreground/10 rounded-xl sm:rounded-2xl p-2 sm:p-4 md:p-6 backdrop-blur-[2px]">
+              <span id="countdown-days" class="font-body text-2xl sm:text-3xl md:text-5xl font-light text-foreground block mb-1">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground/50 font-body" data-i18n="countdown.days">Days</span>
+            </div>
+            <div class="countdown-card bg-foreground/[0.03] border border-foreground/10 rounded-xl sm:rounded-2xl p-2 sm:p-4 md:p-6 backdrop-blur-[2px]">
+              <span id="countdown-hours" class="font-body text-2xl sm:text-3xl md:text-5xl font-light text-foreground block mb-1">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground/50 font-body" data-i18n="countdown.hours">Hours</span>
+            </div>
+            <div class="countdown-card bg-foreground/[0.03] border border-foreground/10 rounded-xl sm:rounded-2xl p-2 sm:p-4 md:p-6 backdrop-blur-[2px]">
+              <span id="countdown-minutes" class="font-body text-2xl sm:text-3xl md:text-5xl font-light text-foreground block mb-1">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground/50 font-body" data-i18n="countdown.minutes">Minutes</span>
+            </div>
+            <div class="countdown-card bg-foreground/[0.03] border border-foreground/10 rounded-xl sm:rounded-2xl p-2 sm:p-4 md:p-6 backdrop-blur-[2px]">
+              <span id="countdown-seconds" class="font-body text-2xl sm:text-3xl md:text-5xl font-light text-foreground block mb-1">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground/50 font-body" data-i18n="countdown.seconds">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 8: VENUE + MAP
+           ================================================================== -->
+      <section id="venue" class="py-20 md:py-28 px-6 overflow-hidden">
+        <div class="max-w-2xl mx-auto">
+          <!-- Venue Illustration -->
+          <div class="relative z-10 flex justify-center -mb-12 reveal-on-scroll">
+            <img src="assests/images/peninsula-hotel-DfDFGUc8.png" alt="Father Muller Convention Centre" class="w-56 md:w-72 h-auto drop-shadow-sm pointer-events-none select-none" />
+          </div>
+
+          <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-6 md:p-10 pt-12 text-center relative z-0 max-w-xl mx-auto reveal-on-scroll">
+            <span class="text-xs font-body tracking-[0.25em] uppercase text-foreground/50 mb-2 block">
+              THE VENUE
+            </span>
+            <h3 class="font-body text-4xl sm:text-4xl md:text-5xl text-foreground mb-2 leading-tight">
+              Father Muller Convention Centre
+            </h3>
+            <p class="font-body text-sm text-foreground/60 tracking-wider mb-2 uppercase">
+              PUMPWELL, MANGALORE
+            </p>
+            <p class="font-body text-xs text-foreground/45 tracking-wide mb-6">
+              Father Muller Road, Kankanady, Mangalore, Karnataka 575002
+            </p>
+            <a href="https://maps.app.goo.gl/eD2HorCbJFdt6pTi9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-foreground/20 text-foreground text-xs font-body tracking-[0.2em] uppercase hover:bg-foreground hover:text-background transition-all duration-300">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>View on Map</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 9: FAMILY / FRIENDS BLESSINGS
+           ================================================================== -->
+      <section id="blessings" class="py-20 md:py-28 px-6 overflow-hidden">
+        <div class="max-w-2xl mx-auto">
+          <!-- Candles Illustration -->
+          <div class="relative z-10 flex justify-center -mb-8 reveal-on-scroll">
+            <img src="assests/images/candles-BlDM94c8.png" alt="Candles Illustration" class="w-40 md:w-52 h-auto drop-shadow-sm pointer-events-none select-none" />
+          </div>
+
+          <!-- Card -->
+          <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-6 sm:p-10 pt-12 text-center max-w-xl mx-auto relative z-0 reveal-on-scroll">
+            <span class="text-xs font-body tracking-[0.25em] uppercase text-foreground/50 mb-3 block">
+              WITH LOVE &amp; BLESSINGS
+            </span>
+            <h3 class="font-display text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
+              Prayers &amp; Good Wishes
+            </h3>
+
+            <!-- Islamic Du'a for Newlyweds -->
+            <p class="font-arabic text-xl sm:text-2xl text-foreground/85 mb-4 leading-relaxed font-normal">
+              بَارَكَ ٱللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+            </p>
+
+            <p class="font-display italic text-xl sm:text-2xl text-foreground/85 leading-relaxed mb-6">
+              “May Allah bless this union and shower His blessings upon you both, and unite you in goodness and happiness.”
+            </p>
+
+            <div class="w-12 h-px bg-foreground/15 mx-auto my-5"></div>
+
+            <p class="font-body text-xs sm:text-sm tracking-widest uppercase text-foreground/60">
+              — From Beloved Family, Relatives &amp; Well-Wishers —
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 10: PRESENCE / GIFT MESSAGE
+           ================================================================== -->
+      <section id="presence" class="py-20 md:py-28 px-6 relative overflow-hidden">
+        <div class="relative max-w-2xl mx-auto">
+          <!-- Floating Roses on Corners -->
+          <img src="assests/images/roses-top-left-D0RRxzlV.png" alt="" class="gifts-rose-left absolute -top-8 -left-12 md:-left-16 w-36 md:w-44 h-auto pointer-events-none select-none z-10 animate-rose-left" />
+          <img src="assests/images/roses-bottom-right-C-Wj2fia.png" alt="" class="gifts-rose-right absolute -bottom-8 -right-12 md:-right-16 w-36 md:w-44 h-auto pointer-events-none select-none z-10 animate-rose-right" />
+
+          <div class="bg-foreground/[0.03] border border-foreground/10 rounded-2xl px-6 py-10 md:px-12 md:py-14 text-center max-w-2xl mx-auto relative z-0 reveal-on-scroll">
+            <span class="text-xs font-body tracking-[0.25em] uppercase text-foreground/50 mb-3 block">
+              WITH SINCERE GRATITUDE
+            </span>
+            <h2 class="font-display text-4xl sm:text-5xl md:text-6xl text-foreground mb-4">
+              Your Presence Is The Greatest Gift
+            </h2>
+            <p class="text-foreground/80 font-body text-base sm:text-lg leading-relaxed italic mb-6">
+              Your presence and Dua on our special day are the greatest gift of all. We look forward to celebrating this joyous occasion with you.
+            </p>
+
+            <div class="w-12 h-px bg-foreground/15 mx-auto my-5"></div>
+
+            <p class="font-body text-xs sm:text-sm tracking-[0.25em] uppercase text-foreground/75 font-semibold">
+              PLEASE JOIN US TO CELEBRATE OUR JOY
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="w-10 h-px bg-foreground/15 mx-auto"></div>
+
+      <!-- ==================================================================
+           SECTION 11: FINAL COUPLE SECTION
+           ================================================================== -->
+      <section id="final-couple" class="py-20 md:py-28 px-6 text-center reveal-on-scroll">
+        <div class="max-w-md mx-auto">
+          <!-- Monogram -->
+          <img src="assests/images/Ornate Sage Green Double M Monogram.png" alt="M+M Monogram" class="w-24 sm:w-28 md:w-36 h-auto mx-auto mb-6 pointer-events-none select-none drop-shadow-sm" />
+
+          <!-- Names -->
+          <h2 class="font-charm text-4xl sm:text-5xl md:text-6xl text-foreground mb-3 leading-tight">
+            Maziya <span class="text-3xl sm:text-4xl md:text-5xl text-foreground/50 italic">&amp;</span> Mufeed
+          </h2>
+
+          <!-- Date -->
+          <p class="text-sm sm:text-base text-foreground/60 font-body tracking-[0.25em] uppercase mb-2">
+            21 NOVEMBER 2026
+          </p>
+          <!--<p class="text-xs text-foreground/40 font-body tracking-[0.2em] uppercase">
+            MANGALORE, INDIA
+          </p> -->
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 12: FOOTER SECTION
+           ================================================================== -->
+      <footer class="py-16 md:py-20 text-center px-6 reveal-on-scroll border-t border-foreground/10">
+        <div class="max-w-md mx-auto">
+          
+          <!-- Names -->
+          <p class="text-xs sm:text-sm text-foreground/50 font-body tracking-[0.2em] uppercase mb-3">
+            Designed by
+          </p>
+
+          <a
+            href="https://www.instagram.com/shazneen_fathimaaaa?stkn=YnJ5NnZmMzIya3ht"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-display text-2xl sm:text-3xl text-foreground mb-2 inline-block hover:opacity-70 transition-opacity"
+          >
+            @shazneen_fathimaaaa
+          </a>
+
+          <p class="text-xs text-foreground/40 font-body tracking-wider">
+            Made with love for Maziya &amp; Mufeed
+          </p>
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- Main Logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
